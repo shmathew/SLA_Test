@@ -6,7 +6,7 @@ sleep 15
 rs_end_time=$(date +%T)
 srs_end_time=$(date +%s)
 
-echo "rs_start_time=$rs_start_time" > sla_output.txt
+echo "rs_start_time=$rs_start_time" >> sla_output.txt
 echo "rs_end_time=$rs_end_time" >> sla_output.txt
 
 DIFFS=$((( $srs_end_time - $srs_start_time)%60))
