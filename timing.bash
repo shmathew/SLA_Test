@@ -13,7 +13,7 @@ DIFFS=$((( $srs_end_time - $srs_start_time)%60))
 DIFFM=$((( $srs_end_time - $srs_start_time)/60))
 
 
-echo "It took $DIFFM minutes and $DIFFS seconds" >> sla_output.txt
+echo "It took $DIFFM minutes and $DIFFS seconds"
 
 
 
